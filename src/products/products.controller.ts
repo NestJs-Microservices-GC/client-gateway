@@ -12,8 +12,8 @@ import {
 } from '@nestjs/common';
 import { ClientProxy, RpcException } from '@nestjs/microservices';
 import { firstValueFrom } from 'rxjs';
-import { PRODUCT_SERVICE } from 'src/common';
-import { PaginationDto } from 'src/dto/pagination.dto';
+import { PRODUCT_SERVICE } from 'src/config';
+import { PaginationDto } from 'src/common/dto/pagination.dto';
 import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
 

@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ClientsModule, Transport } from '@nestjs/microservices';
-import { envs, PRODUCT_SERVICE } from 'src/common';
+import { envs, PRODUCT_SERVICE } from 'src/config';
 import { ProductsController } from './products.controller';
 
 @Module({
