@@ -24,10 +24,7 @@ export class ProductsController {
   @Post()
   createProduct(@Body() createProductDto: CreateProductDto) {
     try {
-      return this.natsClient.send(
-        { cmd: 'delete_product' },
-        { createProductDto },
-      );
+      return this.natsClient.send({ cmd: 'create_product' }, createProductDto);
     } catch (error) {
       throw new RpcException(error);
     }
